@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laptops 101 — A Practical Guide</title>
+  <meta name="description" content="A short blog about laptops: types, buying tips, key features and maintenance." />
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#2b6cb0;
+      --accent-2:#06b6d4;
+      --maxw:1000px;
+      --radius:12px;
+      --shadow: 0 6px 18px rgba(20,20,40,0.06);
+      --glass: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.6));
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:var(--bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+    }
+
+    header.site-header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:18px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .logo{
+      width:52px;
+      height:52px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:grid;
+      place-items:center;
+      color:white;
+      font-weight:700;
+      box-shadow:var(--shadow);
+      flex:0 0 52px;
+    }
+
+    nav.top-nav{
+      margin-left:auto;
+    }
+
+    nav.top-nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:14px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .hero{
+      background: linear-gradient(180deg, rgba(43,108,176,0.08), rgba(6,182,212,0.03));
+      border-radius:var(--radius);
+      padding:28px;
+      display:flex;
+      gap:24px;
+      align-items:center;
+      box-shadow:var(--shadow);
+      margin-bottom:20px;
+    }
+
+    .hero .title{
+      flex:1;
+    }
+
+    .hero h1{
+      margin:0 0 8px 0;
+      font-size:28px;
+      letter-spacing:-0.4px;
+    }
+
+    .hero p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .hero .img{
+      width:150px;
+      height:96px;
+      background:linear-gradient(135deg,#fff,#f3f7fb);
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:inset 0 -6px 20px rgba(6,182,212,0.06);
+      flex:0 0 150px;
+    }
+
+    main.grid{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+      align-items:start;
+    }
+
+    article.post{
+      background:var(--card);
+      border-radius:12px;
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+
+    article.post h2{margin-top:18px;margin-bottom:8px}
+    article.post p{color:var(--muted);margin:0 0 12px 0}
+    article.post ul{margin:8px 0 16px 18px;color:var(--muted)}
+
+    aside.card{
+      background:var(--card);
+      border-radius:12px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      height:max-content;
+    }
+
+    .specs dt{font-weight:700;margin-top:10px}
+    .specs dd{margin:4px 0 8px 0;color:var(--muted)}
+
+    footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .cta{
+      display:inline-block;
+      margin-top:12px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:white;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(43,108,176,0.12);
+    }
+
+    /* Responsive */
+    @media (max-width:860px){
+      body{padding:18px}
+      main.grid{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero .img{width:100%;height:120px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="#">
+        <div class="logo">LB</div>
+        <div>
+          <div style="font-weight:700">Laptop Blog</div>
+          <div style="font-size:12px;color:var(--muted)">Guides • Reviews • Tips</div>
+        </div>
+      </a>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#">Reviews</a>
+        <a href="#">Guides</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="title">
+        <h1 id="hero-title">Laptops 101: Choose the Right Machine</h1>
+        <p>Quick primer on laptop types, essential specs, and maintenance tips to get the most from your laptop.</p>
+      </div>
+      <div class="img" aria-hidden="true">
+        <!-- simple SVG laptop icon -->
+        <svg width="92" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="12" rx="1.5" stroke="#1f2937" stroke-opacity="0.8" stroke-width="1.2" fill="white"/>
+          <rect x="0.7" y="18" width="22.6" height="1.6" rx="0.8" fill="#cbd5e1"/>
+        </svg>
+      </div>
+    </section>
+
+    <main class="grid">
+      <article class="post">
+        <p style="font-size:14px;color:var(--muted)">Published: Oct 28, 2025 • 6 min read</p>
+
+        <h2>1. What kinds of laptops exist?</h2>
+        <p>There are several categories of laptops tailored to different needs:</p>
+        <ul>
+          <li><strong>Ultrabooks:</strong> Thin, lightweight, great battery life — ideal for travel and productivity.</li>
+          <li><strong>Gaming laptops:</strong> Powerful CPUs/GPUs, higher refresh-rate screens, heavier but performance-focused.</li>
+          <li><strong>Workstation / Creator laptops:</strong> Professional GPUs, color-accurate displays and lots of RAM for content creation.</li>
+          <li><strong>Budget laptops:</strong> Affordable for web browsing and office work; consider CPU/RAM trade-offs.</li>
+        </ul>
+
+        <h2>2. Key specs to prioritize</h2>
+        <p>Focus on the components that most affect your everyday experience:</p>
+        <ul>
+          <li><strong>CPU:</strong> Modern multi-core CPU for multitasking (Intel i5/i7, AMD Ryzen 5/7 or Apple M-series).</li>
+          <li><strong>RAM:</strong> 8GB minimum; 16GB recommended for heavy multitasking and creative apps.</li>
+          <li><strong>Storage:</strong> NVMe SSDs offer fast boot and load times — prefer 256GB+ for general use.</li>
+          <li><strong>Display:</strong> IPS or OLED panels with at least 1080p; higher color accuracy for creators.</li>
+          <li><strong>Battery:</strong> Look for real-world battery tests — marketing hours can be optimistic.</li>
+        </ul>
+
+        <h2>3. Buying tips</h2>
+        <p>How to pick a model that fits your workflow:</p>
+        <ul>
+          <li>Decide your primary use (travel, gaming, editing) and set a budget.</li>
+          <li>Read benchmarks and battery tests; watch teardown videos if serviceability matters.</li>
+          <li>Consider port selection (USB-C, HDMI, SD card) vs dongles.</li>
+          <li>Buy slightly above your current needs to increase longevity.</li>
+        </ul>
+
+        <h2>4. Maintenance & longevity</h2>
+        <p>Keep your laptop running smoothly and extend its lifespan:</p>
+        <ul>
+          <li>Keep vents clear, clean fans periodically.</li>
+          <li>Use a dedicated charger and avoid long periods at 100% charge where feasible.</li>
+          <li>Back up important data and keep your OS and drivers up to date.</li>
+        </ul>
+
+        <h2>5. Final thoughts</h2>
+        <p>There’s no one-size-fits-all laptop. Prioritize the features that matter to your daily tasks, invest in a good screen and SSD, and take care of thermal/charging habits to keep the machine healthy for years.</p>
+
+        <p style="margin-top:18px;"><strong>Enjoyed this guide?</strong> Share it or sign up for updates.</p>
+        <a class="cta" href="#">Subscribe</a>
+      </article>
+
+      <aside class="card" aria-labelledby="aside-title">
+        <h3 id="aside-title" style="margin-top:0">Quick Specs & Picks</h3>
+
+        <dl class="specs">
+          <dt>Everyday:</dt>
+          <dd>Intel i5 / Ryzen 5 • 8–16GB RAM • 256–512GB NVMe</dd>
+
+          <dt>Creators:</dt>
+          <dd>Apple Mx / Intel i7 • 16–64GB RAM • 1TB NVMe • Color-accurate display</dd>
+
+          <dt>Gamers:</dt>
+          <dd>RTX 40-series / RX 7000 • High-refresh display • 16–32GB RAM</dd>
+        </dl>
+
+        <h4 style="margin-top:12px">Top buying checklist</h4>
+        <ul style="color:var(--muted);margin:8px 0 0 18px">
+          <li>Performance for your workload</li>
+          <li>Longevity & upgradability</li>
+          <li>Screen quality and keyboard comfort</li>
+          <li>Weight and battery life</li>
+        </ul>
+
+        <div style="margin-top:14px;text-align:center">
+          <a class="cta" href="#" style="padding:8px 12px;font-size:13px">Compare models</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © 2025 Laptop Blog — Practical tips for buying and caring for laptops.
+    </footer>
+  </div>
+</body>
+</html>
