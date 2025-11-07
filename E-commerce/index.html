@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Laptop Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="checkout.html">Cart</a>
+        </nav>
+    </header>
+
+    <main id="product-list">
+
+        <div class="product-card" data-id="prod1">
+            <img src="https://via.placeholder.com/300x200.png?text=ProBook+Alpha" alt="Laptop 1">
+            <h2>ProBook Alpha</h2>
+            <p>A powerful laptop for professionals. 16GB RAM, 1TB SSD.</p>
+            <p class="price">$1299.99</p>
+            <div class="quantity-control">
+                <label for="qty-prod1">Quantity:</label>
+                <input type="number" id="qty-prod1" value="1" min="1">
+            </div>
+            <button class="add-to-cart-btn" 
+                    data-id="prod1" 
+                    data-name="ProBook Alpha" 
+                    data-price="1299.99">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card" data-id="prod2">
+            <img src="https://via.placeholder.com/300x200.png?text=Gamer's+Edge+X" alt="Laptop 2">
+            <h2>Gamer's Edge X</h2>
+            <p>High-performance gaming laptop. RTX 4070, 32GB RAM.</p>
+            <p class="price">$1899.99</p>
+            <div class="quantity-control">
+                <label for="qty-prod2">Quantity:</label>
+                <input type="number" id="qty-prod2" value="1" min="1">
+            </div>
+            <button class="add-to-cart-btn" 
+                    data-id="prod2" 
+                    data-name="Gamer's Edge X" 
+                    data-price="1899.99">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card" data-id="prod3">
+            <img src="https://via.placeholder.com/300x200.png?text=UltraLite+Sleek" alt="Laptop 3">
+            <h2>UltraLite Sleek</h2>
+            <p>Perfect for students and travel. Lightweight, 12-hour battery.</p>
+            <p class="price">$749.50</p>
+            <div class="quantity-control">
+                <label for="qty-prod3">Quantity:</label>
+                <input type="number" id="qty-prod3" value="1" min="1">
+            </div>
+            <button class="add-to-cart-btn" 
+                    data-id="prod3" 
+                    data-name="UltraLite Sleek" 
+                    data-price="749.50">
+                Add to Cart
+            </button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
