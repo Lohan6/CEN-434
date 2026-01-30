@@ -1,8 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
-// Import your existing components
-// Ensure these files are in the same directory (app/tabs/)
 import Calculator from './Calculator';
 import SimpleTextEditor from './SimpleTextEditor';
 import WeightConverter from './WeightConverter';
@@ -103,3 +101,4 @@ const styles = StyleSheet.create({
     height: 600, 
   },
 });
+
